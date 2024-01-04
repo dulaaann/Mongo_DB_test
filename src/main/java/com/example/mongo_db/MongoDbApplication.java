@@ -20,7 +20,7 @@ public class MongoDbApplication {
     }
 
     @Bean
-    CommandLineRunner runner(StudentRepo studentRepo){
+    public CommandLineRunner runner(StudentRepo studentRepo){
         return args -> {
             Address address = new Address("Sri Lanka","Wadduwa");
             Student student = new Student(
